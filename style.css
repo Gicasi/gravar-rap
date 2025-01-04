@@ -1,0 +1,86 @@
+/* Aplicando box-sizing para todos os elementos */
+* {
+  box-sizing: border-box;
+  margin: 0; /* Evitar margens indesejadas de elementos */
+  padding: 0; /* Remover o padding por padrão */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f9f9f9; /* Fundo suave para melhor visualização */
+  color: #333; /* Cor do texto para contraste */
+}
+
+/* Título com cor preta */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Cor preta */
+}
+
+/* Estilo para os botões */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Verde padrão */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo para botões desabilitados */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilo para botões em hover (passar o mouse) */
+button:hover:not(:disabled) {
+  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento para destacar o botão */
+}
+
+/* Estilo para botões quando pressionados */
+button:active {
+  background-color: #3e8e41; /* Cor mais escura quando pressionado */
+}
+
+/* Estilo para a lista de transcrições */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Estilo para cada item da lista */
+li {
+  margin: 10px 0;
+  font-size: 14px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo específico para o botão de download */
+#download {
+  background-color: #007BFF; /* Azul padrão */
+  padding: 10px 20px;
+}
+
+/* Efeito de hover para o botão de download */
+#download:hover:not(:disabled) {
+  background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Efeito de pressionamento para o botão de download */
+#download:active {
+  background-color: #004085; /* Azul pressionado */
+}
